@@ -36,7 +36,6 @@ North Acres is a quiet, friendly neighborhood in northeast Austin, Texas, with a
 	//Please keep the author information as long as the maps in use.//
 	//ProDraw Graphics: http://www.prodraw.net                      //
 	//////////////////////////////////////////////////////////////////
-	<p align="center">
 	function LoadGmaps() {
 		var myLatlng = new google.maps.LatLng(30.3663350,-97.6766580);
 		var myOptions = {
@@ -60,7 +59,7 @@ North Acres is a quiet, friendly neighborhood in northeast Austin, Texas, with a
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map,
-			title:"1005 east applegate, austin, tx 78753"
+			title:"North Acres"
 		});
 		var infowindow = new google.maps.InfoWindow({
 			content: "North Acres"
@@ -73,7 +72,7 @@ North Acres is a quiet, friendly neighborhood in northeast Austin, Texas, with a
 </head>
 <body onload="LoadGmaps()" onunload="GUnload()">
 <!-- Maps DIV : you can move the code below to where you want the maps to be displayed -->
-<div id="MyGmaps" style="width:600px;height:400px;border:1px solid #CECECE;"></div>
+<div id="MyGmaps" align="center" style="width:600px;height:400px;border:1px solid #CECECE;"></div>
 <!-- End of Maps DIV -->
 </body>
 </html>
