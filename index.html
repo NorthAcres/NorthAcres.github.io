@@ -29,6 +29,72 @@ NAHA maintains this page as a billboard for the outside world. We also have <a h
 <img src="http://spin-salad.com/wp-content/uploads/2016/02/NAHAmapsmall.png" alt="neighborhood outline on map">
 <em>North:</em> 	Hollybluff to Walnut Bend then Denell Circle. <em>South:</em> Floradale Dr./Newport Ave. <em>East:</em> Pond/Polecat Creek. <em>West:</em> Middle Fiskville Road/Walnut Bend.
 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Google Maps || Powered By MapsEasy.com Maps Generator</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<style type="text/css">
+	html, body { height: 100%; padding:0px; margin:0px;}
+</style>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+	//////////////////////////////////////////////////////////////////
+	//Powered By ProDraw Graphics Google Maps Generator             //
+	//Please keep the author information as long as the maps in use.//
+	//ProDraw Graphics: http://www.prodraw.net                      //
+	//////////////////////////////////////////////////////////////////
+	function LoadGmaps() {
+		var myLatlng = new google.maps.LatLng(30.3663350,-97.6766580);
+		var myOptions = {
+			zoom: 16,
+			center: myLatlng,
+			disableDefaultUI: true,
+			panControl: true,
+			zoomControl: true,
+			zoomControlOptions: {
+				style: google.maps.ZoomControlStyle.DEFAULT
+			},
+
+			mapTypeControl: true,
+			mapTypeControlOptions: {
+				style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+			},
+			streetViewControl: true,
+			mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+		var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title:"1005 East Applegate, Austin, TX 78753"
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: "North Acres"
+			});
+			google.maps.event.addListener(marker, "click", function() {
+				infowindow.open(map, marker);
+			});
+	}
+</script>
+</head>
+<body onload="LoadGmaps()" onunload="GUnload()">
+<!-- Maps DIV : you can move the code below to where you want the maps to be displayed -->
+<div id="MyGmaps" style="width:100%;height:100%;"></div>
+<!-- End of Maps DIV -->
+</body>
+</html>
+
+
+
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
